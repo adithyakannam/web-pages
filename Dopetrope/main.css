@@ -1,0 +1,211 @@
+#section-1 {
+  background: #cce8f4;
+  text-align: center;
+  background-image: url(./images/pic01.jpg);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#section-1 header {
+  display: inline-block;
+  padding: 1.5em 3.5em;
+  background-color: var(--body-color);
+  margin: 130px;
+  font-size: 28px;
+}
+#section-1 header h1 {
+  color: var(--text-main-color);
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+#section-1 header p {
+  margin-top: 18px;
+  color: var(--main-color);
+  font-size: 23px;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* section 2 */
+
+#section-2 {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+}
+#row {
+  width: 75%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#row > * {
+  /* border: 2px solid var(--main-color); */
+  height: 100%;
+  width: calc(100% / 3);
+  text-align: center;
+  padding: 50px 30px 0 30px;
+}
+.item i{
+  position: relative;
+  /* display: inline-block; */
+  background-color: var(--main-color);
+  font-size: 85px;
+  color: var(--text-main-color);
+  padding: 0.27em 0.3em 0.1em 0.3em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-bottom: 70px;
+}
+.item i::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -0.29em;
+  border-top: solid 0.3em var(--main-color);
+  border-left: solid 0.8em transparent;
+  border-right: solid 0.8em transparent;
+  border-bottom: 0;
+}
+
+.item-2 i {
+  background-color: var(--body-color);
+}
+.item-2 i::after {
+  border-top: solid 0.3em var(--body-color);
+}
+.item-3 i {
+  background-color: var(--text-color);
+}
+.item-3 i::after {
+  border-top: solid 0.3em var(--text-color);
+}
+
+.item h1 {
+  font-weight: 800;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.item p {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--text-color);
+}
+#column > button {
+  padding: 0.5em 2.8em;
+  font-size: 2.2em;
+  font-weight: 700;
+  color: var(--text-main-color);
+  border: 0;
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+#column button + button {
+  margin-left: 20px;
+  background-color: var(--body-color);
+}
+
+/* section -3 */
+#section-3 {
+  /* max-height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+  background-color: var(--background-color);
+  box-shadow: 0.1px 0 0.8px 1px rgba(0, 0, 0, 0.3);
+}
+#section-3 fieldset {
+  width: 75vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border: 0;
+  border-top: 1px solid #827a7c60;
+  margin-top: 40px;
+  padding: 0 1em;
+}
+#section-3 fieldset legend {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 1em;
+}
+#section-3 fieldset div {
+  width: calc(100% / 3.3);
+  height: 570px;
+  margin-top: 50px;
+  background-color: var(--text-main-color);
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.1);
+}
+#section-3 fieldset div img {
+  width: 100%;
+}
+#section-3 header {
+  padding: 1em 2.2em 0 2em;
+}
+#section-3 header > * {
+  margin-top: 30px;
+}
+#section-3 header h1 {
+  font-size: 20px;
+  font-weight: 800;
+}
+#section-3 header p {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.6em;
+}
+button {
+  padding: 0.7em 1.5em;
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--text-main-color);
+  background-color: var(--body-color);
+  border: 0;
+  border-radius: 5px;
+}
+#container-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+#container-2 > div {
+  width: 48% !important;
+  height: fit-content !important ;
+  padding-bottom: 35px;
+}
+#container-2 div header > p:first-of-type {
+  margin-top: 5px;
+}
+#container-2 div button {
+  padding: 0.8em 2.1em;
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--text-main-color);
+  border: 0;
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+#container-2 div button + button {
+  margin-left: 20px;
+  background-color: var(--body-color);
+}
+#section-3 header button i {
+  color: var(--text-color);
+}
+
+/* footer */
+
+
+

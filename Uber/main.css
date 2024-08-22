@@ -1,0 +1,234 @@
+#section-1 {
+  height: 110vh;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--second-color);
+}
+#section-1 article {
+  width: 75%;
+  height: inherit;
+  margin: 0 auto;
+  /* border: 2px solid crimson; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#section-1 article > * {
+  width: 50%;
+}
+#section-1 #header {
+  position: relative;
+}
+
+#section-1 #header h1 {
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 1em;
+  padding-right: 25px;
+}
+#section-1 #header h1 span {
+  font-size: 80px;
+  font-weight: 500;
+}
+#section-1 #header h5 {
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 35px;
+}
+#section-1 #header .input-text {
+  width: 70%;
+  height: 50px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  background-color: var(--input-color);
+  padding: 0 12px;
+  margin-top: 15px;
+}
+#section-1 #header .input-text svg {
+  width: 20px;
+  height: inherit;
+  color: black;
+}
+#section-1 #header .input-text input[type="search"] {
+  font-size: 16px;
+  width: 100%;
+  height: inherit;
+  padding-left: 5px;
+  border: 0;
+  font-weight: 300;
+  background-color: inherit;
+  outline: none;
+}
+
+#section-1 #header .input-text i {
+  font-size: 22px;
+  color: var(--primary-color);
+}
+button {
+  padding: 12px 18px;
+  margin-top: 28px;
+  border: 0;
+  background-color: var(--second-color);
+  border-radius: 8px;
+  color: var(--primary-color);
+  font-size: 17px;
+  font-weight: 500;
+}
+#section-1 #poster {
+  height: 697px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+#section-1 img {
+  height: 100%;
+  width: 100%;
+}
+#section-1 div#line {
+  border: 0.1em solid #fff;
+  border-left-width: 0;
+  height: 50px;
+  position: absolute;
+  bottom: 106px;
+  left: 18px;
+}
+
+/* section-2 */
+
+#section-2 {
+  /* height: 300vh; */
+  width: 100%;
+}
+#section-2 article {
+  width: 76%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+#section-2 article > .block {
+  padding: 60px 0;
+  height: calc(100% / 3);
+  width: 100%;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-between;
+}
+#section-2 article .block .text {
+  /* border: 2px solid coral; */
+  height: fit-content;
+  width: 40%;
+  margin-top: 94px;
+  padding-right: 33px;
+}
+#section-2 .block .text h1 {
+  font-size: 52px;
+  font-weight: bolder;
+  line-height: 64px;
+}
+#section-2 .block .text p {
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 23px;
+  margin-top: 25px;
+}
+
+#section-2 article .block .images img {
+  width: 558px;
+  height: 558px;
+  /* border: 2px solid green; */
+}
+
+#section-2 button {
+  background-color: var(--primary-color);
+  color: var(--second-color);
+  font-size: 1.3em;
+}
+#section-2 a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(171, 167, 167);
+  padding: 3px;
+  margin-left: 15px;
+  transition-property: border-bottom;
+  transition-duration: 800ms;
+  transition-timing-function: linear;
+}
+#section-2 a:active,
+a:visited {
+  color: var(--primary-color);
+}
+#section-2 a:hover {
+  border-bottom: 2px solid black;
+}
+
+/* section-3 */
+
+#section-3 {
+  height: 55vh;
+  background-color: var(--input-color);
+}
+#section-3 article {
+  margin: 0 auto;
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#section-3 h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+#section-3 article > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#section-3 div > div {
+  width: 558px;
+  height: 198px;
+  /* border: 2px solid rebeccapurple; */
+  background-color: var(--second-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  cursor: pointer;
+}
+#section-3 div > div img {
+  width: 150px;
+  height: auto;
+}
+#section-3 div > div > header {
+  margin-right: 50px;
+}
+#section-3 div > div > header > h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+#section-3 header > p {
+  font-size: 17px;
+  font-weight: normal;
+}
+#section-3 i {
+  font-size: 20px;
+  font-weight: 500;
+  z-index: 3;
+  position: absolute;
+  right: 25px;
+  transition-property: right;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
+#section-3 article > div > div:hover i {
+  cursor: pointer;
+  margin-left: 20px;
+  right: 10px;
+}
+
+#section-2 button:hover {
+  cursor: pointer;
+  background-color: rgb(49, 47, 47);
+}

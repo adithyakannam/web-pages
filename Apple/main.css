@@ -1,0 +1,514 @@
+#section-1 {
+  margin-top: 12vh;
+  height: 85vh;
+  width: 100%;
+  /* border: 2px solid rebeccapurple; */
+  color: var(--text-color);
+}
+#section-1 #offer {
+  /* border: 2px solid red; */
+  height: 6vh;
+  background-color: rgb(22, 22, 23);
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section-1 #offer sup {
+  font-size: 9px;
+}
+#section-1 #offer span {
+  color: var(--blue-color);
+}
+#section-1 > div + div {
+  /* border: 2px solid red; */
+  height: calc(100% - 6vh);
+  background-image: url("./images/hero_paralympics.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+#section-1 > div + div header {
+  /* border: 2px solid green; */
+  height: fit-content;
+  width: 30%;
+  text-align: center;
+  margin-top: 45px;
+  font-family: "SF Pro Display0", "SF Pro Text", sans-serif;
+}
+#section-1 header h1 {
+  font-size: 56px;
+  font-weight: 600;
+}
+#section-1 header p {
+  font-size: 28px;
+  font-weight: 00;
+  margin-bottom: 18px;
+}
+button {
+  font-size: 17px;
+  font-weight: lighter;
+  padding: 10px 18px;
+  border-radius: 99px;
+  border: 0;
+}
+
+/* section-2 */
+
+#section-2 {
+  /* border: 2px solid black; */
+  height: 83vh;
+  padding-top: 60px;
+  background-color: #f5f5f7;
+}
+#section-2 article {
+  width: 55%;
+  height: 100%;
+  margin: 0 auto;
+}
+#section-2 article > div {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#section-2 article > div > * {
+  margin: 0 auto;
+  position: relative;
+}
+.bubble svg {
+  fill: var(--light-blue);
+  color: var(--text-color);
+  position: relative;
+}
+.bubble-1 {
+  height: 153px;
+  width: 277px;
+}
+.bubble p {
+  width: 90%;
+  font-weight: 600;
+  font-size: var(--font-size);
+  /* border: 5px solid rgb(255, 70, 70); */
+}
+.bubble-1 p {
+  --font-size: 100px;
+}
+.bubble-1 svg {
+  /* height: 177px;
+  width: 289px; */
+  rotate: -5deg;
+  left: -20px;
+}
+.bubble-2 p {
+  font-weight: 600;
+  --font-size: 32px;
+  margin-top: 9px;
+}
+.bubble-2 {
+  width: 212px;
+  height: 33px;
+}
+.bubble-2 svg {
+  height: 38px;
+  width: 213px;
+  rotate: -2deg;
+  top: -5px;
+  right: -30px;
+}
+.bubble-3 {
+  width: 254px;
+  height: 96px;
+  --font-size: 75px;
+  /* position: relative; */
+}
+.bubble-3 svg {
+  rotate: 5deg;
+  right: -80px;
+  top: 6px;
+}
+.bubble-4 {
+  width: 250px;
+  height: 94px;
+}
+.bubble-4 p {
+  --font-size: 55px;
+  width: 60%;
+}
+.bubble-4 svg {
+  /* width: 262px;
+  height: 136px; */
+  rotate: 10deg;
+  top: -2px;
+  right: -18px;
+}
+.bubble-5 {
+  width: 202px;
+  height: 33px;
+}
+.bubble-5 p {
+  padding-top: 5px;
+  font-weight: 600;
+  --font-size: 34px;
+}
+.bubble-5 svg {
+  fill: rgb(230, 227, 227);
+  color: black;
+  top: -9px;
+  right: -8px;
+}
+
+#section-2 article figure {
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+#section-2 #love {
+  height: 85px;
+  width: 80px;
+  background-image: url("./images/imgs/bubble1-1.png");
+  top: -25px;
+  left: -62px;
+}
+#section-2 #laptop {
+  height: 120px;
+  width: 130px;
+  background-image: url("./images/imgs/bubble1-2.png");
+  top: -46px;
+  right: -19px;
+}
+#section-2 #iPad {
+  height: 150px;
+  width: 140px;
+  background-image: url("./images/imgs/bubble1-3.png");
+  left: -98px;
+  bottom: -124px;
+}
+#section-2 #earpods {
+  height: 70px;
+  width: 70px;
+  background-image: url("./images/imgs/bubble3-1.png");
+  right: -60px;
+  top: 53px;
+}
+#section-2 #pencil {
+  background-image: url("./images/imgs/bubble4-1.png");
+  height: 80px;
+  width: 120px;
+  bottom: 0;
+  right: 8px;
+}
+#section-2 #mark {
+  background-image: url("./images/imgs/bubble5-1.png");
+  width: 30px;
+  height: 30px;
+  top: -22px;
+  right: -5px;
+}
+#section-2 button {
+  font-size: 20px;
+  border: 1px solid var(--blue-color);
+  color: var(--blue-color);
+  text-align: center;
+}
+#section-2 button:hover{
+  background-color: var(--light-blue);
+  color: var(--text-color);
+}
+#section-2 figure:hover{
+  cursor: pointer;
+}
+
+/* #section-3 */
+#section-3 {
+  height: 80vh;
+  /* border: 2px solid rebeccapurple; */
+  background-color: var(--nav-text);
+  background: url("./images/iphone15pro.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  text-align: center;
+}
+#section-3 h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+#section-3 h2 {
+  margin: 12px 0;
+  font-size: 25px;
+  font-weight: 400;
+}
+#section-3 button,
+#section-4 button,
+#section-5 button {
+  background-color: var(--blue-color);
+  font-size: 17px;
+  color: var(--text-color);
+  margin-right: 10px;
+}
+#section-3 button + button,
+#section-4 button + button,
+#section-5 button + button {
+  color: var(--blue-color);
+  background-color: transparent;
+  border: 1px solid var(--blue-color);
+  padding: 9px 18px;
+}
+
+/* section-4 */
+#section-4 {
+  height: 100%;
+  width: 100%;
+  padding: 8px 14px;
+}
+#section-4 article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
+  grid-gap: 12px;
+  justify-content: space-around;
+}
+#section-4 article > div {
+  /* border: 2px solid black; */
+  width: 741px;
+  height: 580px;
+  position: relative;
+}
+.box {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.box h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 53px;
+}
+.box h2 {
+  font-size: 21px;
+  font-weight: 400;
+  margin: 12px 0;
+}
+.box-3,
+.box-4 {
+  color: var(--text-color);
+}
+#section-4 button {
+  font-size: 15px;
+}
+.box figure {
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.box-1 figure {
+  background-image: url("./images/image1.jpg");
+}
+
+.box-2 figure {
+  background-image: url("./images/image2.jpg");
+}
+.box-3 figure {
+  background-image: url("./images/image3.jpg");
+}
+.box-4 figure {
+  background-image: url("./images/image4.jpg");
+}
+.box > div {
+  z-index: 1;
+  position: absolute;
+}
+.box-4 div > h1 {
+  /* border: 2px solid rebeccapurple; */
+  height: 60px;
+  position: relative;
+}
+.box-4 #red-color {
+  color: rgb(165, 11, 11);
+  font-size: 14px;
+  letter-spacing: 3px;
+  position: relative;
+  top: -24px;
+}
+#section-4 .box-4 svg {
+  height: 100px;
+  width: 65px;
+  /* border: 2px solid red; */
+  z-index: 2;
+  position: absolute;
+  top: -25px;
+  left: -10px;
+}
+
+/* section -5 */
+
+#section-5 {
+  height: 82vh;
+  width: 100%;
+  /* border: 2px solid rebeccapurple; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ 
+}
+#section-5 > div {
+  height: 96%;
+  width: 49%;
+  /* border: 2px solid black; */
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+#section-5 #row-img1 {
+  background-image: url("./images/promo_img1.jpg");
+}
+#section-5 #row-img2 {
+  background-image: url("./images/promo_img2.jpg");
+}
+#section-5 header {
+  height: fit-content;
+  text-align: center;
+  margin-top: 53px;
+}
+#section-5 header h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+#section-5 header h4 {
+  font-size: 21px;
+  font-weight: 400;
+  margin: 2px 0 8px 0;
+  color: #333335;
+}
+#section-5 header p {
+  font-size: 17px;
+  font-weight: 600;
+  color: #6e6e73;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+#section-5 header button,
+#section-5 header button + button {
+  font-size: 13px;
+}
+
+/* section-6 */
+
+#section-6 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#section-6 article {
+  height: 100%;
+  width: 100%;
+  /* border: 2px solid cadetblue; */
+  display: flex;
+  flex-direction: column;
+  /* padding:0 0 10px 0; */
+}
+#lists {
+  /* border: 2px solid red; */
+  height: 95%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 13px;
+  overflow-x: scroll;
+}
+#section-6 article #lists > div {
+  height: 100%;
+  width: 80%;
+}
+#section-6 #lists::-webkit-scrollbar {
+  display: none;
+}
+.scroll-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-flex;
+  align-items: flex-end;
+}
+.scroll-1 {
+  background-image: url("./images/movie_posters/the_morning.jpg");
+}
+.scroll-2 {
+  background-image: url("./images/movie_posters/slow_horses.jpg");
+}
+.scroll-3 {
+  background-image: url("./images/movie_posters/presumed_inncocent.jpg");
+}
+.scroll-4 {
+  background-image: url("./images/movie_posters/ba_monkey.jpg");
+}
+.scroll-5 {
+  background-image: url("./images/movie_posters/lady_in_the_lake.jpg");
+}
+.scroll-6 {
+  background-image: url("./images/movie_posters/pachinko.jpg");
+}
+.scroll-7 {
+  background-image: url("./images/movie_posters/dark_matter.jpg");
+}
+.scroll-8 {
+  background-image: url("./images/movie_posters/the_instigators.jpg");
+}
+#section-6 header {
+  /* border: 2px solid blue; */
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  margin: 0 0 35px 75px;
+}
+#section-6 button {
+  background-color: #fff;
+  margin-right: 20px;
+}
+#section-6 header P {
+  font-size: 19px;
+  font-weight: 200;
+  color: white;
+}
+
+#tablist {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 5%;
+  text-align: center;
+}
+#tablist ul {
+  /* border: 2px solid green; */
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+}
+#tablist li {
+  padding: 10px;
+  font-size: 25px;
+}
+#tablist a:visited,
+#tablist a:link {
+  color: gray;
+  text-decoration: none;
+}
+#tablist a:focus {
+  color: black;
+}
+
+

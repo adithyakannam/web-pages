@@ -1,0 +1,67 @@
+@import url("./main.css");
+@import url("./footer.css");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu&display=swap');
+:root{
+    --main-color: #d52349;
+    --background-color: #f7f7f7;
+    --text-main-color: white;
+    --body-color: rgba(34, 30, 31, 0.98);
+    --text-color:#827a7c;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+}
+ a:link, a:visited{
+    text-decoration: none;
+    color: var(--text-color);
+}
+#main{
+    height: 100%;
+}
+#nav{
+    margin-top: 60px;
+    height: 35vh;
+    width: 100%;
+    padding-top: 80px;
+    box-shadow: 0 .1px  0px var(--fourth-color);
+}
+#nav h1{
+    font-size: 39px;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+#sub-nav{
+    width: 43%;
+    margin: 0 auto;
+}
+#sub-nav ul{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+#sub-nav ul li{
+    width: calc(100% / 5);
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+    padding: 13px 0 13px 0;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+#sub-nav ul li a:focus, #sub-nav ul li a:active {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: var(--background-color);
+    font-weight: 600;
+    background-color: var(--main-color);
+}

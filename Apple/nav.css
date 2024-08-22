@@ -1,0 +1,134 @@
+@import url("./main.css");
+@import url('./footer.css');
+:root {
+  --blue-color: #06c;
+  --light-blue:#007aff;
+  --dark-color: #161617;
+  --white-color: #f5f5f7;
+  --text-color: #ffffffeb;
+  --background-color: #161617cc;
+  --footer-text-color:rgba(0, 0, 0, 0.56);
+  --footer-text-main:rgba(0, 0, 0, 0.86);
+  --nav-text: rgba(240, 233, 233, 0.8);
+  --font: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+
+    --top: 0px;
+    --left: 0px;
+    --right: 0px;
+    --bottom: 0px;
+    --font-size:20px;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("https://www.apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_regular.woff2");
+  /* font-weight: 900;
+  font-style: normal; */
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("https://www.apple.com/wss/fonts/SF-Pro-Text/v3/sf-pro-text_regular.woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Icons";
+  src: url("https://www.apple.com/wss/fonts/SF-Pro-Icons/v3/sf-pro-icons_regular.woff2");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("https://www.apple.com/wss/fonts/SF-Pro-Display/v3/sf-pro-display_regular.woff2");
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a,
+a:active,
+a:visited {
+  /* text-decoration: none; */
+  /* color: var(--dark-color); */
+  color: #161617
+  ;
+}
+body {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  /* overflow-x: hidden; */
+  /* border: 2px solid red; */
+  height: 100%;
+  width: 100%;
+}
+#nav {
+  height: 12vh;
+  /* height: 6vh; */
+  /* border: 2px solid black; */
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: var(--background-color);
+}
+#nav > div:first-child {
+  background-color: rgb(22, 22, 23);
+  height: 45%;
+  font-size: 12px;
+}
+#nav > div:last-child {
+  height: 55%;
+}
+#nav > div {
+  height: 100%;
+  width: 100%;
+}
+#nav #sub-nav1 span > * {
+  color: var(--white-color);
+}
+#nav div > div {
+  /* border: 2px solid chocolate; */
+  height: 100%;
+  width: 65%;
+  margin: 0 auto;
+}
+#nav #sub-nav2 {
+  width: 65%;
+  margin: 0 auto;
+}
+#nav #sub-nav1 {
+  height: 100%;
+  width: 65%;
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+} 
+#nav #sub-nav1 > * {
+  margin-right: 10px;
+  color: var(--nav-text);
+}
+#nav #sub-nav2 ul {
+  height: 100%;
+  padding: 0 2px;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+#nav li,
+a {
+  color: var(--nav-text);
+}
+svg {
+  fill: var(--nav-text);
+}
+#nav li:hover,
+svg:hover {
+  cursor: pointer;
+}
+#nav #sub-nav1 span > *:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
