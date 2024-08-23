@@ -51,7 +51,7 @@
   text-align: center;
   padding: 50px 30px 0 30px;
 }
-.item i{
+.item i {
   position: relative;
   /* display: inline-block; */
   background-color: var(--main-color);
@@ -85,6 +85,7 @@
 .item-3 i::after {
   border-top: solid 0.3em var(--text-color);
 }
+
 
 .item h1 {
   font-weight: 800;
@@ -206,6 +207,3 @@ button {
 }
 
 /* footer */
-
-
-

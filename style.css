@@ -6,54 +6,91 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #071228;
   line-height: 1.6;
   font-size: 16px;
-  margin-top: 50px;
+  padding: 80px 0 30px 0;
 }
 a:link,
 a:visited {
   text-decoration: none;
   color: #333;
 }
-div:hover  a{
-  color: #f60;
-}
+
 #container {
-  width: 70%;
-  height: 88vh;
+  width: 60%;
+  height: 100%;
   margin: 0 auto;
   /* border: 2px solid #333; */
   overflow: hidden;
   padding: 8px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 12px;
-}
-img {
-  width: 70%;
-  height: 70%;
-  object-fit: contain;
-  object-position: center;
-  /* border: 2px solid red; */
-}
-.box {
-    background-color: #fff;
-  /* border: 2px solid #333; */
-  text-align: center;
-  height: 200px;
-  width: 320px;
-  /* width: auto; */
-  padding-top: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  grid-gap: 18px;
+  overflow-y: scroll;
 }
 
-.box-1 svg {
-  width: auto;
-  height: 70%;
-  object-fit: contain;
-  object-position: center;
+.box {
+  background-color: #b6b0b06c;
+  text-align: center;
+  height: 250px;
+  padding-top: 10px;
+  transition: all 0.3s ease-in-out;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  text-transform: capitalize;
+  overflow: hidden;
+}
+.box a > div {
+  padding-right: 50px;
+  height: 100%;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.box-1 {
+  background-image: url("./images-1/apple.png");
+}
+.box-2 {
+  background-image: url("./images-1/spotify.png");
+}
+.box-3 {
+  background-image: url("./images-1/Uber.png");
+}
+.box-4 {
+  background-image: url("./images-1/yulu.png");
+}
+.box-5 {
+  background-image: url("./images-1/pic01.jpg");
+  background-size: contain;
+  background-color: rgb(205, 229, 239);
+}
+.box-6 {
+  background-image: url("./Cdnjs/favicon.webp");
+  background-position: center;
+  background-size: contain;
+}
+.box-7 {
+  background-image: url("./images-1/hostinger.png");
+}
+.box a {
+  color: #e1d7b7;
+}
+.box-7 a,.box-5 a {
+  color: rgb(105, 102, 102);
+}
+
+.box:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2),
+    -1px -1px 5px rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+}
+.box:hover a {
+  color: #f60;
 }
