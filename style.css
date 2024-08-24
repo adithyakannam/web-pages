@@ -19,7 +19,7 @@ a:visited {
 }
 
 #container {
-  width: 65%;
+  width: 60%;
   height: 100%;
   margin: 0 auto;
   /* border: 2px solid #333; */
@@ -27,7 +27,6 @@ a:visited {
   padding: 8px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(auto-fill, 1fr);
   grid-gap: 18px;
 }
 
@@ -46,7 +45,7 @@ a:visited {
   overflow: hidden;
 }
 .box a > div {
-  padding-right: 35px;
+  padding-right: 40px;
   height: 100%;
   width: 100%;
   display: inline-flex;
@@ -90,9 +89,8 @@ a:visited {
 }
 .box:hover {
   cursor: pointer;
-  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2),
-    -1px -1px 5px rgba(255, 255, 255, 0.2);
-  transform: translateY(-5px);
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.2);
+  transform: translateY(-8px);
 }
 .box:hover a {
   color: #f60;
