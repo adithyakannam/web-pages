@@ -9,7 +9,7 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #071228;
   line-height: 1.6;
-  font-size: 16px;
+  font-size: 15px;
   padding: 80px 0 30px 0;
 }
 a:link,
@@ -30,7 +30,6 @@ a:visited {
   grid-gap: 18px;
 }
 
-
 .box {
   background-color: #b6b0b06c;
   text-align: center;
@@ -45,7 +44,7 @@ a:visited {
   overflow: hidden;
 }
 .box a > div {
-  padding-right: 40px;
+  padding-right: 45px;
   height: 100%;
   width: 100%;
   display: inline-flex;
@@ -80,10 +79,11 @@ a:visited {
 .box a {
   color: #e1d7b7;
 }
-.box-7 a,.box-5 a {
+.box-7 a,
+.box-5 a {
   color: rgb(105, 102, 102);
 }
-.box a > div > header{
+.box a > div > header {
   width: 80px;
   text-align: left;
 }
@@ -94,4 +94,36 @@ a:visited {
 }
 .box:hover a {
   color: #f60;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    padding: 0;
+  }
+  #container {
+    width: 100%;
+    padding: 0;
+    gap: 50px;
+  }
+  .box {
+    height: 200px;
+    border-radius: 0;
+    position: relative;
+    overflow: visible;
+  }
+  .box a > div {
+    padding-right: 0;
+  }
+  .box a > div > header {
+    width: 60px;
+    font-size: 12px;
+    position: absolute;
+    bottom: -30px;
+    right: 50%;
+    transform: translate(50%, 0);
+    color: #fff;
+  }
+  .box:hover h2 {
+    color: #f60;
+  }
 }
