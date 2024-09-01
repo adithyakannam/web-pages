@@ -96,3 +96,9 @@ button:hover {
   /* border: 2px solr red; */
   background-color: var(--light-blue);
 }
+#foot-row-3 ul li:hover,
+dl > dd:hover,
+#foot-row-3 p:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
