@@ -76,6 +76,9 @@ a:visited {
 .box-7 {
   background-image: url("./images-1/hostinger.png");
 }
+.box-8{
+  background-image: url('./images-1/Safran.png');
+}
 .box a {
   color: #e1d7b7;
 }
@@ -98,30 +101,34 @@ a:visited {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body {
-    padding: 0 0 50px 0;
+    padding: 10px 0 40px 0;
   }
   #container {
     width: 100%;
-    padding: 0 ;
+    padding: 0 0 100px 0;
     gap: 50px;
+    /* border: 2px solid rebeccapurple; */
   }
   .box {
     height: 200px;
     border-radius: 0;
-    position: relative;
     overflow: visible;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
   }
   .box a > div {
     padding-right: 0;
   }
   .box a > div > header {
-    width: 60px;
+    width: auto;
     font-size: 12px;
-    position: absolute;
-    bottom: -30px;
-    right: 50%;
-    transform: translate(50%, 0);
     color: #fff;
+    position: relative;
+    bottom: -40px;
+    /* border: 2px solid red; */
   }
   .box:hover h2 {
     color: #f60;
